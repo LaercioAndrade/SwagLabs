@@ -1,0 +1,113 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-02T19:44:30.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1571409900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.abrirNavegador()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Realizar Login com usuario valido",
+        "description": "",
+        "id": "realizar-login-no-site;realizar-login-com-usuario-valido",
+        "after": [
+          {
+            "result": {
+              "duration": 873645600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharNavegador()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 948421600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que eu acesso a tela de login",
+            "match": {
+              "location": "LoginSteps.que_eu_acesso_a_tela_de_login()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 263296400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "informo os dados corretos de login",
+            "match": {
+              "location": "LoginSteps.informo_os_dados_corretos_de_login(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usuario",
+                  "senha"
+                ]
+              },
+              {
+                "cells": [
+                  "standard_user",
+                  "secret_sauce"
+                ]
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 8871700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "valido se o login e realizado com sucesso",
+            "match": {
+              "location": "LoginSteps.valido_se_o_login_e_realizado_com_sucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@TesteCT01"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar Login no site",
+    "description": "",
+    "id": "realizar-login-no-site",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
